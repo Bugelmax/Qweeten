@@ -25,9 +25,9 @@
 	text-decoration: underline;
 }
 .about-us-img {
-	padding: 30px 0 60px;
+	padding: 30px 0 30px;
 }
-.about-us-parag, .contact-parag {
+.about-us-parag, .description {
 	font-size: 18px;
     margin: 30px 0;
 }
@@ -223,7 +223,7 @@
 .articles-sort select, .sort-type select, 
 .sort-value select,.genre select{
 	padding: 5px 5px 5px 25px; 
-	width: 200px;
+	width: 250px;
 	-webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -236,7 +236,7 @@
 }
 .sort-type {
 	float: left;
-	margin-right: 160px;
+	margin-right: 100px;
 }
 .blog-article-cont a {
 	padding-bottom: 30px;
@@ -633,7 +633,7 @@
 }
 .genre button {
 	background: #c16a94;
-	padding: 20px 90px;
+	padding: 10px 90px;
 	color: #fff;
 	border: none;
 	font-size: 24px;
@@ -764,7 +764,7 @@
 	.member-discr td, .member-discr td span,
 	.member-discr td button, .item-discr td,
 	.item-discr td span, .item-discr td button {
-		font-size: 12px;
+		font-size: 14px;
 	}
 	.member-discr td button,
 	.item-discr td button {
@@ -776,5 +776,11 @@
 	}
 	.our-shop-list .shop-item {
 		width: 100%;
+	}
+	.description {
+		font-size: 14px;
+	}
+	.login-page form > input {
+		font-size: 18px;
 	}
 }
