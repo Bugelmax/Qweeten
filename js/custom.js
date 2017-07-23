@@ -38,32 +38,6 @@ jQuery(document).ready(function(){
 
 	});
 	mobileMenuContent();
-	
-	
-	
-	
-	function hideButton() {
-		$('.best-photos-cont').each(function(){
-			if($(this).find("figure:hidden").length == 0){
-				$(this).parents('.gallery-page').find('.see-more').css('display', 'none');
-			}
-		});
-	}
-	$(".best-photos-cont figure").slice(0, 10).show();
-	//$(".webinar-products.all-webinars ul.products li").slice(0, 10).show();
-	$(".see-more").on('click', function (e) {
-		e.preventDefault();
-		$(this).parents('.gallery-page').find('figure:hidden').slice(0, 5).slideDown();
-		if ($("figure:hidden").length == 0) {
-			$("#load").fadeOut('slow');
-		}
-		/* $('html,body').animate({
-			scrollTop: $(this).offset().top
-		}, 200); */
-		hideButton();
-	});
-	hideButton();
-	
 });
 
 jQuery(window).resize(function(){

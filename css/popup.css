@@ -1,7 +1,6 @@
-.box_window, .box_window_member, 
-.box_window_apply {
+.box_window{
     width: 500px;
-    height: 520px;
+    height: 300px;
     position: fixed;
     top: 0;
     left: 0;
@@ -14,181 +13,72 @@
     padding-bottom: 50px;
     text-align: center;
 }
-.box_window .pop-parag,
-.box_window_member .pop-parag,
-.box_window_apply .pop-parag {
+.box_window .pop-parag {
     color: #4b4b4b;
     font-size: 18px;
     font-family: "RobotoSlab";
-    margin: 10px 0;
 }
-.box_window .goods-value,
-.box_window_member .goods-value,
-.box_window_apply .goods-value   {
+.box_window .goods-value {
     font-size: 20px;
     color: #4b4b4b;
 }
-.box_window .goods-value span,
-.box_window_member .goods-value span,
-.box_window_apply .goods-value span{
+.box_window .goods-value span {
     color: #973081;
 }
+.box_window .form-paid,
 .box_window .user-date {
-    margin: 20px;
-}
-.box_window .form-paid, .box_window .user-date,
-.box_window_member .form-paid, .box_window_member .user-date  {
     text-align: left;
     padding: 20px 50px;
 
 }
-.box_window .form-paid,
-.box_window_member .form-paid {
+.box_window .form-paid {
     color: #bdbdbd;
     font-size: 20px;
-    margin-bottom: 15px;
 }
-.box_window .form-paid input,
-.box_window_member .form-paid input{
-    margin-bottom: 20px;
-    margin-right: 10px;
-}
-.box_window .form-paid input:checked + span, 
-.box_window_member .form-paid input:checked + span{
+.box_window .form-paid input:checked + span {
   color: #000;
 }
-/*.box_window .form-paid input:disabled + span,
-.box_window_member .form-paid input:disabled + span {
-    margin: 10px;
-}*/
-.box_window .user-date input,
-.box_window_member .user-date input {
+.box_window .user-date input {
     padding: 15px 40px;
-    margin-bottom: 20px;
-    width: 100%;
 }
-.box_window .popup-button,
-.box_window_member .popup-button,
-.buy {
+.box_window .popup-button {
     font-size: 20px;
     color: #973081;
     background: #fff;
     border: 1px solid #973081;
     padding: 20px 50px;
 }
-.box_window_in, .box_window_in_member {
-    position: relative;
-    /*overflow-y:auto;*/
+.box_window_in {
+  position: relative;
+  overflow-y:auto;
 }
-.box_title, .box_title_member {
-    position: absolute;
-    left: 0px;
-    top: -30px;
-    color: #fff;
+.box_title {
+  position: absolute;
+  left: 0px;
+  top: -30px;
+  color: #fff;
 }
-.bw_close, .bw_close_member,
-.bw_close_apply {
-    position: absolute;
-    top: 9px;
-    right: 10px;
-    font-size: 20px;
-    color: #484242;
-    cursor: pointer;
-    z-index: 2;
+.bw_close{
+  position:absolute;
+  top: -25px;
+  font-size: 10px;
+  color: #fff;
+  right:0px;
+  cursor:pointer;
+  z-index: 2;
 }
-.mask, .mask-one, .mask-two {
-    position:fixed;
-    background:rgba(0, 0, 0, 0.38);
-    display:none;
-    height:100%;
-    width: 100%;
-    z-index:10;
+.mask{
+  position:fixed;
+  background:rgba(0, 0, 0, 0.38);
+  display:none;
+  height:100%;
+  width: 100%;
+  z-index:10;
 }
-/*.to_blur.blur {
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-}*/
-.work-type select, .work-duration select {
-    width: 90%;
-    margin: 20px 0;
-    padding: 20px 20px;
-    font-size: 18px;
-}
-.work-duration select {
-    margin-top: 0;
-}
-@media screen and (max-width: 720px) {
-    .box_window .goods-value,
-    .box_window .user-date input,
-    .box_window .form-paid input,
-    .box_window_member .goods-value,
-    .box_window_member .user-date input,
-    .box_window_member .form-paid input, {
-        font-size: 16px;
-    }
-    .box_window .popup-button,
-    .box_window_member .popup-button{
-        font-size: 16px;
-        padding: 15px 40px;
-    }
-    .box_window {
-        width: 410px;
-        height: 460px;
-    }
-    .box_window_member {
-        height: 495px;
-        width: 410px;  
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .box_window .user-date input {
-        padding: 15px 20px;
-    }
-    .box_window .form-paid,
-    .box_window .goods-value,
-    .box_window .popup-button,
-    .box_window .user-date input,
-    .box_window .form-paid input,
-    .box_window_member .form-paid,
-    .box_window_member .goods-value,
-    .box_window_member .popup-button,
-    .box_window_member .form-paid input  {
-        font-size: 14px;
-    }
-    .box_window {
-        width: 290px;
-        height: 435px;
-    }
-    .box_window_member {
-        width: 290px;
-        height: 470px;   
-    }
-}
-@media screen and (max-width: 320px) {
-    .box_window .user-date input {
-        padding: 15px 15px;
-    }
-    .box_window .popup-button,
-    .box_window_member .popup-button {
-        font-size: 15px;
-        padding: 10px 65px;
-        margin-top: 10px;
-    }
-    .box_window .form-paid, 
-    .box_window .user-date,
-    .box_window_member .form-paid {
-        text-align: left;
-        font-size: 12px;
-    }
-    .work-type select, .work-duration select {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-    .box_window_member {
-        height: 410px;   
-    }
+.to_blur.blur {
+ -webkit-filter: blur(5px);
+ -moz-filter: blur(5px);
+ -o-filter: blur(5px);
+ -ms-filter: blur(5px);
+ filter: blur(5px);
 }
