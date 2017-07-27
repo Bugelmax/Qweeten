@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="wid</td>=device-wid</td>, initial-scale=1">
     <!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<![endif]-->
 
-    <title>Магазин</title>
+    <title>Піжама &laquo;Панда&raquo;</title>
     <!--link rel="shortcut icon" href="images/favicon.png" type="image/png"-->
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
@@ -18,8 +18,8 @@
     <link rel="stylesheet" type="text/css" href="css/photoswipe-default-skin.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="pages.css" />
-    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/pages.css" />
+    <link rel="stylesheet" href="css/popup.css" />
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -67,7 +67,7 @@
 							<li><i class="fa fa-question" aria-hidden="true"></i><a href="about_us.html">про нас</a></li>
 							<li><i class="fa fa-phone" aria-hidden="true"></i><a href="contact.html">контакти</a></li>
 							<li><i class="fa fa-sign-out" aria-hidden="true"></i><a href="login.html">увійти</a></li>
-							<li class="active"><i class="fa fa-shopping-bag" aria-hidden="true"></i><a href="#">магазин</a></li>
+							<li class="active"><i class="fa fa-shopping-bag" aria-hidden="true"></i><a href="shop.html">магазин</a></li>
 						</ul>
 					</div>
 					<div class='header_selects_cont'>
@@ -117,7 +117,7 @@
                     <table>
                         <tr>
                             <td>Тип:</td>
-                            <td>Піжама жіноча</td>
+                            <td><p>Піжама жіноча</p></td>
                         </tr>
                         <tr>
                             <td>Опис:</td>
@@ -125,11 +125,23 @@
                         </tr>
                         <tr>
                             <td>Розміри:</td>
-                            <td>S, M, L, XL</td>
+                            <td>
+								<ul class="custom-radio">
+								  	<li><input type="radio" name="radio" value="1" id="radio01" /><label for="radio01">S</label></li>
+								  	<li><input type="radio" name="radio" value="2" id="radio02" /><label for="radio02">M</label></li>
+								  	<li><input type="radio" name="radio" value="3" id="radio03" /><label for="radio03">L</label></li>
+								  	<li><input type="radio" name="radio" value="4" id="radio04" /><label for="radio04">XL</label></li>
+								</ul>
+                            </td>
                         </tr>
                         <tr>
                             <td>Колір:</td>
-                            <td>Чорний, білий</td>
+                            <td>
+                            	<ul class="custom-radio">
+								  	<li><input type="radio" name="radio" value="1" id="color01" /><label for="color01">чорний</label></li>
+								  	<li><input type="radio" name="radio" value="2" id="color02" /><label for="color02">білий</label></li>
+								</ul>
+                            </td>
                         </tr>
                         <tr>
                             <td>Сезон:</td>
@@ -141,16 +153,12 @@
                         </tr>
                         <tr>
                             <td>Ціна:</td>
-                            <td><span>399 грн</span><span class="action">500 грн</span></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                            	<div class="popbutton" data-window="1"><button class="buy">Купити</button></div>
-                            </td>
+                            <td><span class="item-value">399 грн</span><span class="item-store">500 грн</span></td>
                         </tr>
                     </table>
-                   
+					<div class="popbutton" data-window="1">
+						<span class="buy">Купити</span>
+					</div>                   
                 </div>
         	</div>    
         	
@@ -197,7 +205,7 @@
 			<div class='f-contacts'>
 				<div class="footer-text font-roboto">
 					<p class='ttl font-robotoslab'>Qweeten</p>
-					<p class='subttl font-tcm'>making holidays together</p>
+					<p class='subttl font-tcm'>making holidays toge</td>er</p>
 					<p class='f-text'>Integer porttitor sollicitudin urna quis tincidunt. Mauris vel laoreet metus. Mauris quam turpis, ullamcorper sed ultrices eget, tempus pretium purus. Donec eu nulla a risus auctor tincidunt sit amet a felis. Sed quis convallis ante.</p>
 					<p class='f-links'><a href="mailto:companymail@gmail.com">companymail@gmail.com</a></p>
 					<p class='f-links'><a href="tel:+380506058127">+38 (050) 605-81-27</a></p>
@@ -215,7 +223,6 @@
 			</div>
 		</div>
 	</footer>
-	</div>
 
 	<div id="1" class="popwindow" data-title="">
 		<p class="pop-parag font-robotoslab">Купівля</p>
@@ -230,7 +237,7 @@
 		   	<input type="checkbox" name="option1" value="a1" checked><span>Оплата готівкою</span><br>
 		   	<input type="checkbox" name="option2" value="a2" disabled>Оплата через ресурс Qweeten з нашою гарантією Вашої співпраці (поки недоступно)<br>
 		</form>
-		<button class="popup-button font-roboto">Замовити</button>
+		<span class="popup-button font-roboto">Замовити</span>
 	</div>
 </body>
 </html>

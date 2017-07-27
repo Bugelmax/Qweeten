@@ -17,7 +17,8 @@
     <link rel="stylesheet" type="text/css" href="css/photoswipe-default-skin.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="pages.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+    <link rel="stylesheet" href="css/popup.css">
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <!--script type="text/javascript" src="js/materialize.min.js"></script-->
@@ -25,6 +26,7 @@
     <script type="text/javascript" src="js/photoswipe-ui-default.min.js"></script>
     <script type="text/javascript" src="js/photoswipe-init.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
 </head>
 
 <body>
@@ -96,44 +98,46 @@
         <div id="best-photos" class='wrapper'>
             <div class="member-page">
                 <div class="our-member clear">
-                    <div class="member-photo">
-                        <p>Іван Петренко</p>
-                        <p>м. Львів</p>
+                    <div class="member-photo font-robotoslab">
+                        <div>
+                            <p>Іван Петренко</p>
+                            <p>м. Львів</p>
+                        </div>
                         <img src="img/ph-1.png" alt="">
                     </div>
                     <div class="member-discr">
                         <table>
                             <tr>
-                                <td>Апаратура:</td>
-                                <td>Canon mark 2</td>
+                                <th>Апаратура:</th>
+                                <th><p>Canon mark 2</p></th>
                             </tr>
                             <tr>
-                                <td>Опис:</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta facilis laudantium tempora. Illum animi distinctio aliquid, rerum laboriosam iure aliquam provident dolorem, nemo hic nihil sapiente est non perferendis ad. </td>
+                                <th>Опис:</th>
+                                <th>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta facilis laudantium tempora. Illum animi distinctio aliquid, rerum laboriosam iure aliquam provident dolorem, nemo hic nihil sapiente est non perferendis ad. </th>
                             </tr>
                             <tr>
-                                <td>Кількість камер:</td>
-                                <td>2</td>
+                                <th>Кількість камер:</th>
+                                <th><p>2</p></th>
                             </tr>
                             <tr>
-                                <td>Оптика:</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quae sequi facilis reiciendis voluptatibus tempore placeat eveniet officiis magnam possimus dolorum!</td>
+                                <th>Оптика:</th>
+                                <th>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quae sequi facilis reiciendis voluptatibus tempore placeat eveniet officiis magnam possimus dolorum!</th>
                             </tr>
                             <tr>
-                                <td>Ціна за годину:</td>
-                                <td><span>150 грн</span></td>
+                                <th>Ціна за годину:</th>
+                                <th><span>150 грн</span></th>
                             </tr>
                             <tr>
-                                <td>Весільна фотозйомка:</td>
-                                <td><span>500 грн</span></td>
+                                <th>Весільна фотозйомка:</th>
+                                <th><span>500 грн</span></th>
                             </tr>
                             <tr>
-                                <td>Love story:</td>
-                                <td><span>200 грн</span></td>
+                                <th>Love story:</th>
+                                <th><span>200 грн</span></th>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td><button>Замовити</button></td>
+                                <th></th>
+                                <th><div class="popbutton-member" data-window="1"><span class="buy font-robotoslab ">Замовити</span></div></th>
                             </tr>
                         </table>
                      
@@ -149,8 +153,9 @@
                 </div>
 
 
-                <p class='home-title'>Галерея</p>
-    			<div class="my-gallery best-photos-cont clear" itemscope="" itemtype="http://schema.org/ImageGallery" data-pswp-uid="1">
+            <div class="gallery-page">
+                <p class='home-title'>найкращі фотографії</p>
+                <div class="my-gallery best-photos-cont gallery-page clear" itemscope="" itemtype="http://schema.org/ImageGallery" data-pswp-uid="1">
                     <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
                         <a data-size="800x800" href="img/gallery-example/pict-1.png" itemprop="contentUrl">
                             <img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-1.png">
@@ -201,94 +206,94 @@
                             <img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-10.png">
                         </a>
                     </figure>
-    				<figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-    					<a data-size="800x800" href="img/gallery-example/pict-1.png" itemprop="contentUrl">
-    						<img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-1.png">
-    					</a>
-    				</figure>
-    				<figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-    					<a data-size="800x800" href="img/gallery-example/pict-2.png" itemprop="contentUrl">
-    						<img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-2.png">
-    					</a>
-    				</figure>
-    				<figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-    					<a data-size="800x800" href="img/gallery-example/pict-3.png" itemprop="contentUrl">
-    						<img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-3.png">
-    					</a>
-    				</figure>
-    				<figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-    					<a data-size="800x800" href="img/gallery-example/pict-4.png" itemprop="contentUrl">
-    						<img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-4.png">
-    					</a>
-    				</figure>
-    				<figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-    					<a data-size="800x800" href="img/gallery-example/pict-5.png" itemprop="contentUrl">
-    						<img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-5.png">
-    					</a>
-    				</figure>
-    				<figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-    					<a data-size="800x800" href="img/gallery-example/pict-6.png" itemprop="contentUrl">
-    						<img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-6.png">
-    					</a>
-    				</figure>
-    				<figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-    					<a data-size="800x800" href="img/gallery-example/pict-7.png" itemprop="contentUrl">
-    						<img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-7.png">
-    					</a>
-    				</figure>
-    				<figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-    					<a data-size="800x800" href="img/gallery-example/pict-8.png" itemprop="contentUrl">
-    						<img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-8.png">
-    					</a>
-    				</figure>
-    				<figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-    					<a data-size="800x800" href="img/gallery-example/pict-9.png" itemprop="contentUrl">
-    						<img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-9.png">
-    					</a>
-    				</figure>
-    				<figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-    					<a data-size="800x800" href="img/gallery-example/pict-10.png" itemprop="contentUrl">
-    						<img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-10.png">
-    					</a>
-    				</figure>
-    			</div>
-    			<div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-    				<div class="pswp__bg"></div>
-    				<div class="pswp__scroll-wrap">
-    					<div class="pswp__container">
-    						<div class="pswp__item"></div>
-    						<div class="pswp__item"></div>
-    						<div class="pswp__item"></div>
-    					</div>
-    					<div class="pswp__ui pswp__ui--hidden">
-    						<div class="pswp__top-bar">
-    							<div class="pswp__counter"></div>
-    							<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-    							<button class="pswp__button pswp__button--share" title="Share"></button>
-    							<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-    							<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a data-size="800x800" href="img/gallery-example/pict-1.png" itemprop="contentUrl">
+                            <img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-1.png">
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a data-size="800x800" href="img/gallery-example/pict-2.png" itemprop="contentUrl">
+                            <img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-2.png">
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a data-size="800x800" href="img/gallery-example/pict-3.png" itemprop="contentUrl">
+                            <img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-3.png">
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a data-size="800x800" href="img/gallery-example/pict-4.png" itemprop="contentUrl">
+                            <img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-4.png">
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a data-size="800x800" href="img/gallery-example/pict-5.png" itemprop="contentUrl">
+                            <img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-5.png">
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a data-size="800x800" href="img/gallery-example/pict-6.png" itemprop="contentUrl">
+                            <img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-6.png">
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a data-size="800x800" href="img/gallery-example/pict-7.png" itemprop="contentUrl">
+                            <img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-7.png">
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a data-size="800x800" href="img/gallery-example/pict-8.png" itemprop="contentUrl">
+                            <img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-8.png">
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a data-size="800x800" href="img/gallery-example/pict-9.png" itemprop="contentUrl">
+                            <img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-9.png">
+                        </a>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a data-size="800x800" href="img/gallery-example/pict-10.png" itemprop="contentUrl">
+                            <img alt="Example text" itemprop="thumbnail" src="img/gallery-example/pict-10.png">
+                        </a>
+                    </figure>
+                </div>
+                <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+                    <div class="pswp__bg"></div>
+                    <div class="pswp__scroll-wrap">
+                        <div class="pswp__container">
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                        </div>
+                        <div class="pswp__ui pswp__ui--hidden">
+                            <div class="pswp__top-bar">
+                                <div class="pswp__counter"></div>
+                                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                                <button class="pswp__button pswp__button--share" title="Share"></button>
+                                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
 
-    							<div class="pswp__preloader">
-    								<div class="pswp__preloader__icn">
-    									<div class="pswp__preloader__cut">
-    										<div class="pswp__preloader__donut"></div>
-    									</div>
-    								</div>
-    							</div>
-    						</div>
-    						<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-    							<div class="pswp__share-tooltip">&nbsp;</div>
-    						</div>
-    						<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-    						<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-    						<div class="pswp__caption">
-    							<div class="pswp__caption__center"></div>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
+                                <div class="pswp__preloader">
+                                    <div class="pswp__preloader__icn">
+                                        <div class="pswp__preloader__cut">
+                                            <div class="pswp__preloader__donut"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                                <div class="pswp__share-tooltip">&nbsp;</div>
+                            </div>
+                            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                            <div class="pswp__caption">
+                                <div class="pswp__caption__center"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="see-more font-proxima">
-                    <button>Показати ще</button>
+                    <span>Показати ще</button>
                 </div>
             </div>
         </div>
@@ -319,5 +324,42 @@
 			</div>
 		</div>
 	</footer>
+
+    <div id="1" class="popwindow-member" data-title="">
+        <p class="pop-parag font-robotoslab">Замовлення</p>
+        <hr>
+        <form class="work-type">
+            <select>
+                <option>Еротична зйомка</option>
+                <option>Весільна зйомка</option>
+                <option>Корпоративні події</option>
+                <option>Конференції</option>
+                <option>Love story</option>
+                <option>Ню</option>
+            </select>
+        </form>
+        <form class="work-duration">
+            <select>
+                <option>3 години</option>
+                <option>4 години</option>
+                <option>5 години</option>
+            </select>
+        </form>
+        <p class="goods-value font-roboto">Ціна: <span>450 грн</span></p>
+
+        <form class="form-paid font-roboto">
+            <input type="checkbox" name="option1" value="a1" checked><span>Оплата готівкою</span><br>
+            <input type="checkbox" name="option2" value="a2" disabled><span>Оплата через ресурс Qweeten з нашою гарантією Вашої співпраці (поки недоступно)</span><br>
+        </form>
+        <div class="popbutton-apply" data-window="1"><span class="buy font-roboto">Далі</span></div>
+    </div>
+
+    <div id="2" class="popwindow-apply" data-title="">
+        <p class="pop-parag font-robotoslab">Замовлення</p>
+        <hr>
+        <p class="goods-value font-roboto">Ви маєте оплатити готівкою: <span>450 грн</span></p>
+
+        <div class="popbutton-apply" data-window="1"><span class="popup-button font-roboto">Готово</span></div>
+    </div>
 </body>
 </html>

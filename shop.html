@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/photoswipe-default-skin.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="pages.css" />
+    <link rel="stylesheet" href="css/pages.css" />
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -27,8 +27,12 @@
     <script type="text/javascript" src="js/photoswipe-init.js"></script>
     <script type="text/javascript" src="js/nouislider.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <!-- <script type="text/javascript" src="js/common.js"></script> -->
+    <script type="text/javascript" src="js/filter.js"></script>
+    
 </head>
 <body>
+	
 	<header class=''>
         <div class='header-top-cont'>
 			<div class='header-top font-proxima clear'>
@@ -60,13 +64,13 @@
 						</div>
 						<ul class='clear'>
 							<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">головна</a></li>
-							<li class="active"><i class="fa fa-user-circle" aria-hidden="true"></i><a href="members.html">фоторафи</a></li>
+							<li><i class="fa fa-user-circle" aria-hidden="true"></i><a href="members.html">фоторафи</a></li>
 							<li><i class="fa fa-file-text-o" aria-hidden="true"></i><a href="blog.html">блог</a></li>
 							<li><i class="fa fa-picture-o" aria-hidden="true"></i><a href="gallery.html">галерея</a></li>
 							<li><i class="fa fa-question" aria-hidden="true"></i><a href="about_us.html">про нас</a></li>
 							<li><i class="fa fa-phone" aria-hidden="true"></i><a href="contact.html">контакти</a></li>
 							<li><i class="fa fa-sign-out" aria-hidden="true"></i><a href="login.html">увійти</a></li>
-							<li><i class="fa fa-shopping-bag" aria-hidden="true"></i><a href="#">магазин</a></li>
+							<li class="active"><i class="fa fa-shopping-bag" aria-hidden="true"></i><a href="shop.html">магазин</a></li>
 						</ul>
 					</div>
 					<div class='header_selects_cont'>
@@ -98,31 +102,43 @@
     	<div class='wrapper'>
     		<p class='home-title'>магазин</p>
     		<div class="shop-cont clear">
-    			<a class="show-filter" href="#">Фільтр</a>
+	    		<div class="filter-mob-btn">Перейти до фільтру</div>
 				<div class="shop-goods">
+	    			<div class="filter-close-btn">
+						<span><i class="fa fa-window-close" aria-hidden="true"></i></span>
+					</div>
     				<div class="sort-value font-robotoslab">
-						<p>Ціна</p>
-						<div class="value-range">
-	    					<input type="text" value="0"> - 
-	    					<input type="text" value="1.000">
-							<div id="slider-start">
+    					<p>Ціна</p>
+	    				<div class="value-range">
+							<input type="text" id="input-with-keypress-1" value="0"> - 
+	    					<input type="text" id="input-with-keypress-0" value="1.000">
+	    					<div id="slider-start">
 							</div>
 						</div>
     					<form>
-    						<input id="1" type="checkbox" name="option1" value="a1" checked><label for="1">0 - 150 грн (59)</label><br>
-						   	<input id="2" type="checkbox" name="option2" value="a2"><label for="2">150 - 300 грн (31)</label><br>
-						   	<input id="3" type="checkbox" name="option3" value="a3" checked><label for="3">300 - 450 грн (44)</label><br>
-						   	<input id="4" type="checkbox" name="option5" value="a5"><label for="4">750 - 100 грн (24)</label><br>
-						   	<input id="5" type="checkbox" name="option5" value="a5"><label for="5">Все (179)</label><br>
+						   	<input id="val150" type="checkbox" name="option1" value="a1" checked>
+						   	<label for="val150">0 - 150 грн (59)</label><br>
+						   	<input id="val300" type="checkbox" name="option2" value="a2">
+						   	<label for="val300">150 - 300 грн (31)</label><br>
+						   	<input id="val450" type="checkbox" name="option3" value="a3" checked>
+						   	<label for="val450">300 - 450 грн (44)</label><br>
+						   	<input id="val1000" type="checkbox" name="option5" value="a5">
+						   	<label for="val1000">750 - 1000 грн (24)</label><br>
+						   	<input id="valAll"type="checkbox" name="option5" value="a5">
+							<label for="valAll">Все (179)</label><br>
 						</form>
     				</div>
     				<div class="sort-type font-robotoslab">
     					<p>Тип</p>
     					<form>
-						   	<input id="6" type="checkbox" name="option1" value="a1" checked><label for="6">піжами</label> (59)<br>
-						   	<input id="7" type="checkbox" name="option2" value="a2"><label for="7">штани (31)</label><br>
-						   	<input id="8" type="checkbox" name="option3" value="a3" checked><label for="8">шорти (44)</label><br>
-						   	<input id="9" type="checkbox" name="option5" value="a5"><label for="9">Все (179)</label><br>
+						   	<input id="sleepwear" type="checkbox" name="option1" value="a1" checked>
+							<label for="sleepwear">піжами (59)</label><br>
+						   	<input id="pants" type="checkbox" name="option2" value="a2">
+						   	<label for="pants">штани (31)</label><br>
+						   	<input id="shorts" type="checkbox" name="option3" value="a3" checked>
+						   	<label for="shorts">шорти (44)</label><br>
+						   	<input id="all" type="checkbox" name="option5" value="a5">
+						   	<label for="all">Все (179)</label><br>
 						</form>
     				</div>
     			</div>
@@ -145,7 +161,7 @@
 	                        <img class="blank-img" src="img/op-blank.jpg" alt=''>
 	                        <div class="goods-descr">
 	                            <p class='goods-name'>Піжама</p>
-	                            <p>&laquo; Віслюк &raquo;</p>
+	                            <p>&laquo;Віслюк&raquo;</p>
 	                            <div class="basket-img">
 	                                <img src="img/basket.png" alt=''>
 	                            </div>
@@ -158,7 +174,7 @@
 	                        <img class="blank-img" src="img/op-blank.jpg" alt=''>
 	                        <div class="goods-descr">
 	                            <p class='goods-name'>Піжама</p>
-	                            <p>&laquo; Заєць &raquo;</p>
+	                            <p>&laquo;Заєць&raquo;</p>
 	                            <div class="basket-img">
 	                                <img src="img/basket.png" alt=''>
 	                            </div>
@@ -171,7 +187,7 @@
 	                        <img class="blank-img" src="img/op-blank.jpg" alt=''>
 	                        <div class="goods-descr">
 	                            <p class='goods-name'>Піжама</p>
-	                            <p>&laquo; Білка &raquo;</p>
+	                            <p>&laquo;Білка&raquo;</p>
 	                            <div class="basket-img">
 	                                <img src="img/basket.png" alt=''>
 	                            </div>
@@ -184,7 +200,7 @@
 	                        <img class="blank-img" src="img/op-blank.jpg" alt=''>
 	                        <div class="goods-descr">
 	                            <p class='goods-name'>Піжама</p>
-	                            <p>&laquo; Бетмен &raquo;</p>
+	                            <p>&laquo;Бетмен&raquo;</p>
 	                            <div class="basket-img">
 	                                <img src="img/basket.png" alt=''>
 	                            </div>
@@ -197,7 +213,7 @@
 	                        <img class="blank-img" src="img/op-blank.jpg" alt=''>
 	                        <div class="goods-descr">
 	                            <p class='goods-name'>Піжама</p>
-	                            <p>&laquo; Панда &raquo;</p>
+	                            <p>&laquo;Панда&raquo;</p>
 	                            <div class="basket-img">
 	                                <img src="img/basket.png" alt=''>
 	                            </div>
@@ -210,7 +226,7 @@
 	                        <img class="blank-img" src="img/op-blank.jpg" alt=''>
 	                        <div class="goods-descr">
 	                            <p class='goods-name'>Піжама</p>
-	                            <p>&laquo; Чорний кіт &raquo;</p>
+	                            <p>&laquo;Чорний кіт&raquo;</p>
 	                            <div class="basket-img">
 	                                <img src="img/basket.png" alt=''>
 	                            </div>
@@ -223,7 +239,7 @@
 	                        <img class="blank-img" src="img/op-blank.jpg" alt=''>
 	                        <div class="goods-descr">
 	                            <p class='goods-name'>Піжама</p>
-	                            <p>&laquo; Заєць &raquo;</p>
+	                            <p>&laquo;Заєць&raquo;</p>
 	                            <div class="basket-img">
 	                                <img src="img/basket.png" alt=''>
 	                            </div>
@@ -276,14 +292,57 @@
 		</div>
 	</footer>
 	<script>
+		// var startSlider = document.getElementById('slider-start');
+
+		// noUiSlider.create(startSlider, {
+		// 	start: [20, 80],
+		// 	range: {
+		// 		'min': [ 0 ],
+		// 		'max': [ 100 ]
+		// 	}
+		// });
+
+
 		var startSlider = document.getElementById('slider-start');
 
 		noUiSlider.create(startSlider, {
-			start: [20, 80],
+			start: [ 100, 900 ],
+			connect: true,
 			range: {
-				'min': [ 0 ],
-				'max': [ 100 ]
+				'min': 0,
+				'max': 1000
 			}
+		});
+		var select = document.getElementById('input-select');
+
+		// Append the option elements
+		for ( var i = 0; i <= 1000; i++ ){
+
+			var option = document.createElement("option");
+				option.text = i;
+				option.value = i;
+
+			select.appendChild(option);
+		};
+		var inputNumber = document.getElementById('input-number');
+
+		startSlider.noUiSlider.on('update', function( values, handle ) {
+
+			var value = values[handle];
+
+			if ( handle ) {
+				inputNumber.value = value;
+			} else {
+				select.value = Math.round(value);
+			}
+		});
+
+		select.addEventListener('change', function(){
+			startSlider.noUiSlider.set([this.value, null]);
+		});
+
+		inputNumber.addEventListener('change', function(){
+			startSlider.noUiSlider.set([null, this.value]);
 		});
 	</script>
 </body>

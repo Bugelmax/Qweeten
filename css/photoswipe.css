@@ -136,7 +136,11 @@
   width: auto;
   height: auto;
   top: 0;
-  left: 0; }
+  left: 0;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+ }
 
 /*
 	stretched thumbnail or div placeholder element (see below)
@@ -259,4 +263,7 @@ body .pswp .pswp__caption .pswp__caption__center {
 .pswp__ui--fit .pswp__caption,
 .pswp__top-bar {
 	background: rgba(255, 255, 255, .7) !important;
+}
+.pswp__bg {
+  opacity: 0.3;
 }
