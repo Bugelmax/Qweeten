@@ -737,6 +737,13 @@
 }
 .filter-mob-btn {
 	display: none;
+	position: absolute;
+	top: 38px; 
+	padding: 10px;
+	border-radius: 0; 
+	background: #c16a94;
+	color: #fff;
+	cursor: pointer; 
 }
 .noUi-horizontal {
     height: 7px;
@@ -805,14 +812,7 @@
     	width: 100%;
 	}
 	.filter-mob-btn {
-		position: absolute; 
 		display: block; 
-		top: 38px; 
-	    padding: 10px;
-		border-radius: 0; 
-		background: #c16a94;
-	    color: #fff;
-		cursor: pointer; 
 	}
 	.registration .reg-cell .left {
 		width: 20%;
@@ -909,7 +909,6 @@
 	.filter-mob-btn {
 		position: fixed;
 		top: 160px;
-		z-index: 10;
 	}
 	.right span {
 	    font-size: 17px;
